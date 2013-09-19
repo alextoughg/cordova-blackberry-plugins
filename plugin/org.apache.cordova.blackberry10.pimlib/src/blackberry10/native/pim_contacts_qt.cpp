@@ -109,9 +109,7 @@ Json::Value PimContactsQt::Find(const Json::Value& args)
             listFilters.setIsFavourite(favorite);
         }
 
-        if (limit != -1) {
-            listFilters.setLimit(limit);
-        }
+        listFilters.setLimit(limit);
 
         getAccountFilters(NULL, &listFilters, includeAccounts, excludeAccounts);
 
